@@ -1,0 +1,96 @@
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity 0.25s;
+    border-color: transparent;
+    color: white;
+}
+.button:hover {
+    filter: opacity(0.90)
+}
+.button_add {
+    background-color: green;
+}
+.button_delete {
+    background-color: red;
+}
+
+.squares_wrap {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.squares {
+    animation: all 0.4s ease-in-out;
+
+    transform: translateX(-20vw);
+}
+
+.squares__row {
+    display: flex;
+    min-width: fit-content;
+}
+
+.squares__row_0 {
+    transform: translateX(0);
+}
+
+.squares__row_1 {
+    transform: translateX(-100vw);
+}
+
+.squares__row_2 {
+    transform: translateX(-200vw);
+}
+
+.squares__row_3 {
+    transform: translateX(-300vw);
+}
+
+.squares_empty {
+    height: 20vw;
+    width: 100%;
+    background-color: beige;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(0);
+}
+
+
+.square {
+    height: 20vw;
+    width: 20vw;
+}
+
+/*@keyframes add {*/
+/*    from {*/
+/*        transform: scaleX(0) translateX(-10vw);*/
+/*    }*/
+
+/*    to {*/
+/*        transform: scaleX(100%) translateX(0);*/
+/*    }*/
+/*}*/
+
+.square_show {
+    /*width: 20vw;*/
+    animation: all 0.4s ease-in-out;
+}
+
+.square_delete {
+    transform: translateX(400px);
+}

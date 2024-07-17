@@ -3,7 +3,7 @@ import { StateSchema } from './StateSchema';
 import {squaresReducer} from "../../../../entries/Square/model/slice/squareSlice.ts";
 
 export function createReduxStore(initialState?: StateSchema) {
-    return configureStore<>({
+    return configureStore({
         reducer: {
             squares: squaresReducer,
         },
